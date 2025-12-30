@@ -1,1 +1,1 @@
-You can do whatever you like with this version of the game, just please don't steal the idea.
+I hope you enjoy playing the finished game when it comes out. for now you may play the demo if you happened to find my page.
