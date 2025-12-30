@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvhsgsu5jyijx"]
+
+[ext_resource type="Script" uid="uid://dds040uwf7uff" path="res://health_ui.gd" id="1_tt5l4"]
+[ext_resource type="Script" uid="uid://b8guj1w006vpv" path="res://health_label.gd" id="2_iy3an"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iy3an"]
+
+[node name="HealthUI" type="Control"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 61.0
+offset_top = -44.0
+offset_right = 101.0
+offset_bottom = -4.0
+grow_vertical = 0
+script = ExtResource("1_tt5l4")
+
+[node name="HealthLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 42.0
+label_settings = SubResource("LabelSettings_iy3an")
+script = ExtResource("2_iy3an")

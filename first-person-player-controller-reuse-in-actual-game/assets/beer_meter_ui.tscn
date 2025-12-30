@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://beo5cfqdecpk8"]
+
+[ext_resource type="Script" uid="uid://c0j5sax83swx8" path="res://scripts/beer_meter_ui.gd" id="1_3howj"]
+
+[sub_resource type="Gradient" id="Gradient_7v5k8"]
+colors = PackedColorArray(0.13319641, 0.13319641, 0.13319638, 1, 0.12225228, 0.12225222, 0.1222522, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pv5wn"]
+gradient = SubResource("Gradient_7v5k8")
+
+[sub_resource type="Gradient" id="Gradient_ckjcd"]
+colors = PackedColorArray(0.9999996, 0.7672721, 0.3027311, 1, 0.9676589, 0.99026644, 0.9844546, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_3lsv6"]
+gradient = SubResource("Gradient_ckjcd")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(50, 50)
+script = ExtResource("1_3howj")
+
+[node name="BeerBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+value = 50.0
+texture_under = SubResource("GradientTexture1D_pv5wn")
+texture_progress = SubResource("GradientTexture1D_3lsv6")
